@@ -1,0 +1,53 @@
+name: travel_planner_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.8.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  ionicons: ^0.2.1
+
+  # ✅ Firebase (compatible versions)
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.9
+  cloud_firestore: ^4.17.3
+
+  connectivity_plus: ^6.1.4
+  url_launcher: ^6.2.6
+  permission_handler: ^12.0.0+1
+  image_picker: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1   # <-- added this
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/international/
+    - assets/pakistan/
+    - assets/background.png
+    - assets/guider.png
+    - assets/illustration.png
+    - assets/map.png
+    - assets/welcome.png
+    - assets/barcode.png
+    - assets/profile.png
+
+flutter_launcher_icons:     # <-- added this
+  android: true
+  ios: true
+  image_path: "assets/app_logo.png"  # <-- use your logo image here
